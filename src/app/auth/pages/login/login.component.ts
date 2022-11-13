@@ -24,6 +24,8 @@ export class LoginComponent {
                private authService: AuthService ) { }
 
   login(){
+   
+    
     const { email, password } = this.miFormulario.value;
     this.authService.login( email, password )
       .subscribe( ok => {
